@@ -9,21 +9,15 @@
 <body>
     <section class = "middle" id = "recipe_list">
         <h1>your recipes</h1>
-        <section>
-
-
+        <section >
         {% for result in results.results %}
-            <p><img src = "{{result.thumbnail}}"> {{result.title}}</p>
-            <p>{{result.ingredients}}</p>
+            <p id = "name_dish"><img src = "{{result.thumbnail}}"> {{result.title}}</p>
+            <!-- <p id = "ingredients">{{result.ingredients}}</p> -->
         {% endfor%}        
-
-
-
-
         </section>
     
         
     </section>
-    <p><a href = "/">Search Again</a></p>
+    <p id ="home"><a href = "/">Search Again</a></p>
 </body> 
 </html>
