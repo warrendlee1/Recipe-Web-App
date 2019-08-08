@@ -11,6 +11,31 @@ body {
     
 }
 
+#home {
+    font-size: 18px;
+    grid-column: 2;
+    grid-row:3;
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    margin-top: 130px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+#title { 
+    grid-column: 2;
+    grid-row:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 40px;
+}
+
 h1{
     margin: 5px;
 }
@@ -21,6 +46,7 @@ h1{
 
 
 .middle {
+    font-size: 30px;
     grid-row: 2;
     grid-column: 2;
     display: flex;
@@ -46,11 +72,13 @@ h1{
 
 #ingredients {
     font-size: 16px;
-    background:rgba(0, 119, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    background:rgba(2, 94, 2, 0.149);
 }
 
 #search_button { 
     justify-content: flex-start;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     align-items: flex-start;
     width: 100%;
@@ -58,7 +86,6 @@ h1{
     background-color: rgb(20, 181, 33);
     color: white;  
     padding: 0px;
-    font-size: 16px;
     border:none;
 }
 

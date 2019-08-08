@@ -7,17 +7,20 @@
  
 </head>
 <body>
+        <p id ="home"></p>
+    <h1 id = "title" >  your recipes </h1>
     <section class = "middle" id = "recipe_list">
-        <h1>your recipes</h1>
-        <section >
+        
+        <section>
         {% for result in results.results %}
-            <p id = "name_dish"><img src = "{{result.thumbnail}}"> {{result.title}}</p>
+            <p id = "name_dish"><img src = "{{result.thumbnail}}"> {{result.title}} <a id = "ingredients">{{result.ingredients}}</a></p>
             <!-- <p id = "ingredients">{{result.ingredients}}</p> -->
-        {% endfor%}        
+        {% endfor%}
         </section>
-    
+        
         
     </section>
-    <p id ="home"><a href = "/">Search Again</a></p>
+    <p id = "home"><a href = "/" > Return Home </a></p>
+    
 </body> 
 </html>
