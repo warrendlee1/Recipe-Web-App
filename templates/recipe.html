@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Recipe</title>
-    <link rel = "stylesheet" href = "../styles/recipe.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
  
 </head>
 <body>
-    <h1 id = "title" >  your recipes </h1>
-    <section class = "middle" id = "recipe_list">
-        
-        <section>
+    <h1 id="title" >  your recipes </h1>
+    <section class="middle" id="recipe_list">
+        <div>
         {% for result in results.results %}
-            <p id = "name_dish"><img src = "{{result.thumbnail}}">{{result.title}}</p>
-            <p id = "ingredients">{{result.ingredients}}</p>
+            <p id="name_dish"><img src="{{result.thumbnail}}">{{result.title}}</p>
+            <div class="ingredients">{{ result.ingredients }}</div>
         {% endfor%}
-        </section>
+        </div>
     </section>
-    <p id = "home"><a href = "/" > Return Home </a></p>
-    <script src = "/scripts/animation.js"></script>
+    <p id="home"><a href="/" > Return Home </a></p>
+    <script src="/scripts/animation.js"></script>
 </body> 
 </html>

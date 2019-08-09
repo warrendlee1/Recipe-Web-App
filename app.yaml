@@ -8,8 +8,11 @@
     static_dir: images
   - url: /styles
     static_dir: styles
+  - url: /scripts
+    static_dir: scripts
   - url: /.*
     script: main.app
+
 
   libraries:
   - name: jinja2

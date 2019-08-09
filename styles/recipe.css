@@ -64,7 +64,7 @@ h1{
 }
 
 #name_dish{
-    font-size: 20px;
+    font-size: 26px;
     background:rgba(0, 119, 0, 0.1);
 
 }
@@ -75,11 +75,11 @@ h1{
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
-#ingredients {
+.ingredients {
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     background:rgba(2, 94, 2, 0.149);
-    /* opacity:0; */
+    display: none;
 }
 
 #search_button { 
