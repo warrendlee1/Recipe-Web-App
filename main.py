@@ -28,6 +28,7 @@ class RecipeDisplayHandler(webapp2.RequestHandler):
             'results': results
         }))
 
+
 app = webapp2.WSGIApplication([
     ('/', SearchFormHandler),
     ('/recipe', RecipeDisplayHandler),

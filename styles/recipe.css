@@ -17,11 +17,10 @@ body {
     grid-row:3;
     display: flex;
     align-items: start;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 130px;
     font-family: 'Courier New', Courier, monospace;
 }
-
 
 
 #title { 
@@ -65,15 +64,22 @@ h1{
 }
 
 #name_dish{
-    font-size: 24px;
+    font-size: 20px;
     background:rgba(0, 119, 0, 0.1);
-    
+
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 #ingredients {
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     background:rgba(2, 94, 2, 0.149);
+    /* opacity:0; */
 }
 
 #search_button { 
